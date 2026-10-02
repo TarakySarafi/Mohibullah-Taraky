@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ps" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تره کی صرافي | Taraky Sarafi</title>
+<style>
+:root{--navy:#032b4f;--navy2:#064a7d;--gold:#efb63f;--blue:#0868cf;--green:#16a35b;--bg:#f3f7fb;--ink:#10283e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--ink)}
+.topbar{background:#022541;color:#fff;padding:8px 20px;font-size:14px}.topbar .inner,.nav .inner,.wrap{max-width:1200px;margin:auto}.topbar .inner{display:flex;justify-content:space-between;gap:15px;direction:ltr}
+.nav{background:white;box-shadow:0 2px 12px #001d3320;position:sticky;top:0;z-index:10}.nav .inner{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:58px;height:58px;border:3px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:19px;background:var(--navy)}
+.brand h1{margin:0;color:var(--navy);font-size:25px}.brand small{display:block;direction:ltr;color:#557}
+.links{display:flex;gap:16px}.links a{text-decoration:none;color:var(--navy);font-weight:700}.langs button{border:1px solid #d3dee9;background:white;padding:8px 10px;cursor:pointer}.langs button.active{background:var(--navy);color:white}
+.hero{background:linear-gradient(120deg,#032b4f,#07588d);color:#fff;padding:72px 20px}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.hero h2{font-size:58px;color:var(--gold);margin:0}.hero h3{font-size:34px;margin:8px 0;direction:ltr;text-align:right}.hero p{font-size:22px}.hero .sub{font-size:17px;opacity:.9}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:800}.gold{background:var(--gold);color:#082b47}.outline{border:1px solid white;color:white}.whatsapp{background:var(--green);color:white}
+.ratecard,.panel{background:white;border-radius:18px;box-shadow:0 14px 38px #001a3030;padding:22px;color:var(--ink)}.ratecard h3{direction:rtl;text-align:right;font-size:24px;margin:0 0 14px}.live{color:#d11;font-size:12px}
+table{width:100%;border-collapse:collapse;direction:ltr}th,td{padding:11px 8px;text-align:center;border-bottom:1px solid #e1e8ef}th{background:#edf3f8}
+section{padding:55px 20px}.title{text-align:center;color:var(--navy);font-size:34px;margin:0 0 28px}.destinations{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.dest{min-height:145px;border-radius:15px;padding:20px;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#0a6ab4,#032b4f);box-shadow:0 8px 20px #00274425}.dest span{font-size:31px}.dest b{font-size:19px;margin-top:7px}.dest small{direction:ltr}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.service{background:#fff;border-radius:14px;padding:25px;text-align:center;box-shadow:0 6px 20px #0b355015}.service .ico{font-size:35px}.service b{display:block;color:var(--navy);font-size:19px;margin:9px}
+.calc{background:#eaf2f8}.calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field label{display:block;font-weight:700;margin:8px 0}.field input,.field select{width:100%;padding:13px;border:1px solid #c7d5e2;border-radius:8px;font-size:16px}.result{margin-top:18px;background:#e8f4ff;border-radius:10px;padding:17px;text-align:center;font-size:20px;font-weight:800}
+.notice{font-size:12px;color:#667b8e;text-align:center;margin-top:10px}.contact{background:var(--navy);color:white}.contact .title{color:var(--gold)}.contactbox{text-align:center}.phone{font-size:27px;direction:ltr;font-weight:800}
+footer{background:#021d34;color:#dce8f2;text-align:center;padding:23px}
+@media(max-width:900px){.links{display:none}.hero .wrap,.calcgrid{grid-template-columns:1fr}.destinations{grid-template-columns:repeat(2,1fr)}.services{grid-template-columns:repeat(2,1fr)}.hero h2{font-size:42px}}
+@media(max-width:520px){.topbar .inner{display:block;text-align:center}.brand h1{font-size:20px}.langs{display:flex}.hero{padding:48px 16px}.hero h2{font-size:36px}.hero h3{font-size:27px}.destinations,.services{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="inner"><span>☎ 0093 765743212</span><span id="topTag">Currency Exchange & Money Transfer</span></div></div>
+<div class="nav"><div class="inner">
+ <div class="brand"><div class="logo">TS</div><div><h1 id="brand">تره کی صرافي</h1><small>TARAKY SARAFI</small></div></div>
+ <div class="links"><a href="#home" data-i="home">کورپاڼه</a><a href="#rates" data-i="rates">نرخونه</a><a href="#transfer" data-i="transfer">د پیسو لېږد</a><a href="#services" data-i="services">خدمتونه</a><a href="#contact" data-i="contact">اړیکه</a></div>
+ <div class="langs"><button onclick="setLang('ps')" class="active" id="psb">پښتو</button><button onclick="setLang('fa')" id="fab">دری</button><button onclick="setLang('en')" id="enb">English</button></div>
+</div></div>
+
+<main id="home">
+<section class="hero"><div class="wrap">
+ <div><h2 id="heroName">تره کی صرافي</h2><h3>TARAKY SARAFI</h3><p id="heroText">د اسعارو تبادله او د پیسو لېږد</p><p class="sub" id="heroSub">له افغانستانه نړۍ ته — له نړۍ څخه افغانستان ته</p>
+ <div class="cta"><a class="btn gold" href="#calculator" id="calcBtn">د اسعارو محاسبه</a><a class="btn whatsapp" href="https://wa.me/93765743212" target="_blank">WhatsApp: 0093 765743212</a></div></div>
+ <div class="ratecard" id="rates"><h3><span id="todayRates">د نن ورځې نرخونه</span> <span class="live">● LIVE</span></h3>
+ <table><thead><tr><th>Currency</th><th>AFN reference</th></tr></thead><tbody id="rateRows"><tr><td>USD</td><td>65.1640</td></tr><tr><td>EUR</td><td>74.0333</td></tr><tr><td>PKR</td><td>0.2306</td></tr><tr><td>CNY</td><td>10.0442</td></tr><tr><td>AED</td><td>17.6295</td></tr><tr><td>SAR</td><td>17.1628</td></tr></tbody></table>
+ <div class="notice" id="rateNote">Reference rates. Final Taraky Sarafi customer rate may differ.</div></div>
+</div></section>
+
+<section id="transfer"><div class="wrap"><h2 class="title" id="worldTitle">زموږ د پیسو لېږد سیمې</h2>
+<div class="destinations">
+ <div class="dest"><span>🇪🇺</span><b id="eu">اروپا</b><small>Europe</small></div>
+ <div class="dest"><span>🇨🇳</span><b id="cn">چین</b><small>China</small></div>
+ <div class="dest"><span>🇵🇰</span><b id="pk">پاکستان</b><small>Pakistan</small></div>
+ <div class="dest"><span>🇦🇪</span><b id="dubai">دوبۍ</b><small>Dubai / UAE</small></div>
+ <div class="dest"><span>🇸🇦</span><b id="saudi">سعودي عربستان</b><small>Saudi Arabia</small></div>
+</div></div></section>
+
+<section class="calc" id="calculator"><div class="wrap"><h2 class="title" id="calculatorTitle">د اسعارو محاسبه</h2>
+<div class="panel calcgrid">
+ <div class="field"><label id="fromLabel">له کوم اسعار څخه؟</label><select id="from"><option>USD</option><option>AFN</option><option>EUR</option><option>PKR</option><option>CNY</option><option>AED</option><option>SAR</option></select><label id="amountLabel">مبلغ</label><input id="amount" type="number" value="1000" min="0"></div>
+ <div class="field"><label id="toLabel">کوم اسعار ته؟</label><select id="to"><option>AFN</option><option>USD</option><option>EUR</option><option>PKR</option><option>CNY</option><option>AED</option><option>SAR</option></select><label id="resultLabel">اټکلي نتیجه</label><div class="result" id="result">—</div></div>
+</div><div class="notice" id="calcNote">محاسبه د مرجع نرخونو پر بنسټ ده. د نهایي نرخ لپاره له تره کی صرافي سره اړیکه ونیسئ.</div></div></section>
+
+<section id="services"><div class="wrap"><h2 class="title" id="serviceTitle">زموږ خدمتونه</h2><div class="services">
+ <div class="service"><div class="ico">💱</div><b id="s1">د اسعارو تبادله</b><span>Currency Exchange</span></div>
+ <div class="service"><div class="ico">✈️</div><b id="s2">د پیسو لېږد</b><span>Money Transfer</span></div>
+ <div class="service"><div class="ico">📊</div><b id="s3">د اسعارو نرخونه</b><span>Exchange Rates</span></div>
+ <div class="service"><div class="ico">☎️</div><b id="s4">د مشتریانو خدمت</b><span>Customer Support</span></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap contactbox"><h2 class="title" id="contactTitle">اړیکه ونیسئ</h2><p><b>تره کی صرافي — TARAKY SARAFI</b></p><p class="phone">0093 765743212</p><p><a class="btn whatsapp" href="https://wa.me/93765743212" target="_blank">WhatsApp</a></p></div></section>
+</main>
+<footer>© 2026 تره کی صرافي — TARAKY SARAFI</footer>
+
+<script>
+const rates={AFN:1,USD:65.1640,EUR:74.0333,PKR:0.2306,CNY:10.0442,AED:17.6295,SAR:17.1628};
+function convert(){let a=parseFloat(document.getElementById('amount').value)||0,f=document.getElementById('from').value,t=document.getElementById('to').value;let afn=a*rates[f],out=afn/rates[t];document.getElementById('result').textContent=new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(out)+" "+t}
+['amount','from','to'].forEach(id=>document.getElementById(id).addEventListener(id==='amount'?'input':'change',convert));convert();
+
+const T={
+ps:{dir:'rtl',brand:'تره کی صرافي',heroText:'د اسعارو تبادله او د پیسو لېږد',heroSub:'له افغانستانه نړۍ ته — له نړۍ څخه افغانستان ته',home:'کورپاڼه',rates:'نرخونه',transfer:'د پیسو لېږد',services:'خدمتونه',contact:'اړیکه',today:'د نن ورځې نرخونه',world:'زموږ د پیسو لېږد سیمې',eu:'اروپا',cn:'چین',pk:'پاکستان',dubai:'دوبۍ',saudi:'سعودي عربستان',calculator:'د اسعارو محاسبه',from:'له کوم اسعار څخه؟',amount:'مبلغ',to:'کوم اسعار ته؟',res:'اټکلي نتیجه',serv:'زموږ خدمتونه',s1:'د اسعارو تبادله',s2:'د پیسو لېږد',s3:'د اسعارو نرخونه',s4:'د مشتریانو خدمت',contactTitle:'اړیکه ونیسئ'},
+fa:{dir:'rtl',brand:'صرافی تره کی',heroText:'تبادله اسعار و انتقال پول',heroSub:'از افغانستان به جهان — از جهان به افغانستان',home:'خانه',rates:'نرخ‌ها',transfer:'انتقال پول',services:'خدمات',contact:'تماس',today:'نرخ‌های امروز',world:'مقاصد انتقال پول',eu:'اروپا',cn:'چین',pk:'پاکستان',dubai:'دبی',saudi:'عربستان سعودی',calculator:'محاسبه اسعار',from:'از کدام ارز؟',amount:'مبلغ',to:'به کدام ارز؟',res:'نتیجه تخمینی',serv:'خدمات ما',s1:'تبادله اسعار',s2:'انتقال پول',s3:'نرخ اسعار',s4:'خدمات مشتریان',contactTitle:'تماس با ما'},
+en:{dir:'ltr',brand:'Taraky Sarafi',heroText:'Currency Exchange & Money Transfer',heroSub:'From Afghanistan to the world — from the world to Afghanistan',home:'Home',rates:'Rates',transfer:'Money Transfer',services:'Services',contact:'Contact',today:"Today's Exchange Rates",world:'Transfer Destinations',eu:'Europe',cn:'China',pk:'Pakistan',dubai:'Dubai',saudi:'Saudi Arabia',calculator:'Currency Calculator',from:'From currency',amount:'Amount',to:'To currency',res:'Estimated result',serv:'Our Services',s1:'Currency Exchange',s2:'Money Transfer',s3:'Exchange Rates',s4:'Customer Support',contactTitle:'Contact Us'}
+};
+function setLang(l){let x=T[l];document.documentElement.lang=l;document.documentElement.dir=x.dir;document.getElementById('brand').textContent=x.brand;document.getElementById('heroName').textContent=x.brand;document.getElementById('heroText').textContent=x.heroText;document.getElementById('heroSub').textContent=x.heroSub;document.querySelector('[data-i=home]').textContent=x.home;document.querySelector('[data-i=rates]').textContent=x.rates;document.querySelector('[data-i=transfer]').textContent=x.transfer;document.querySelector('[data-i=services]').textContent=x.services;document.querySelector('[data-i=contact]').textContent=x.contact;document.getElementById('todayRates').textContent=x.today;document.getElementById('worldTitle').textContent=x.world;['eu','cn','pk','dubai','saudi'].forEach(k=>document.getElementById(k).textContent=x[k]);document.getElementById('calculatorTitle').textContent=x.calculator;document.getElementById('fromLabel').textContent=x.from;document.getElementById('amountLabel').textContent=x.amount;document.getElementById('toLabel').textContent=x.to;document.getElementById('resultLabel').textContent=x.res;document.getElementById('serviceTitle').textContent=x.serv;['s1','s2','s3','s4'].forEach(k=>document.getElementById(k).textContent=x[k]);document.getElementById('contactTitle').textContent=x.contactTitle;['ps','fa','en'].forEach(k=>document.getElementById(k+'b').classList.toggle('active',k===l))}
+</script>
+</body></html>
